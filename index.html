@@ -1,0 +1,69 @@
+<html>
+<head>
+<center>
+<input type="button" value="Home" style="height:50px;width:200px;background-color:black;color:white;font-size:15px" 
+onclick=window.location.href="https://www.google.com" >
+<input type="button" value="Aim" style="height:50px;width:200px;background-color:black;color:white;font-size:15px" 
+onclick=window.location.href="sample.html" >
+<input type="button" value="Internship" style="height:50px;width:200px;background-color:black;color:white;font-size:15px" 
+onclick=window.location.href="https://www.internshala.com" >
+
+<input type="button" value="Contact++" style="height:50px;width:200px;background-color:black;color:white;href="#";font-size:15px" 
+onclick=window.location.href="https://www.linkedin.com" >
+</center>
+<section>
+<img class="myslides"
+src="dd.png" style="width:100%">
+<label><h2>OUR VISION AND MISSION</h2></label>
+<img class="myslides"
+src="Screenshot_2018-01-04-20-42-14_1.jpg" style="width:100%">
+</section>
+<script>
+var myIndex=0;
+carousel();
+function carousel(){
+var i;
+var x=document.getElementsByClassName("myslides");
+for(i=0;i<x.lenght;i++){
+x[i].style.display="none";
+}
+myIndex++;
+if(myIndex>x.lenght){myIndex=1}
+x[myIndex-1].style.display="block";
+setTimeout(carousel,3000);
+}
+</script>
+<form 
+ action="mailto:santhoshsubash10@gmail.com" method="post" enctype="text/plain">
+<label><h2>FOR CONTACT:</h2></label>
+<center>
+<h2>ENTER YOUR NAME:</h2><br>
+<input type="text"
+placeholder="enter your name"
+name="name">
+<h2>ENTER YOUR E-MAIL:</h2><br>
+<input type="text"
+placeholder="enter your email"
+name="mail">
+<h2>ENTER YOUR NAME:</h2><br>
+<input type="text"
+placeholder="enter your comment"
+name="Comment">
+<input type="submit" value="send" style="width:60px;height:20px;background-color:black;color:white">
+<input type="reset" value="reset" style="width:60px;height:20px;background-color:black;color:white" >
+</center>
+</form>
+<center>
+<input type="button" value="Home" style="height:50px;width:200px;background-color:black;color:white;font-size:15px" 
+onclick=window.location.href="https://www.google.com" >
+<input type="button" value="Aim" style="height:50px;width:200px;background-color:black;color:white;font-size:15px" 
+onclick=window.location.href="http://www.google.com" >
+<input type="button" value="Download" style="height:50px;width:200px;background-color:black;color:white;font-size:15px" 
+onclick=window.location.href="http://www.sparkfoundation.com" >
+
+<input type="button" value="Contact" style="height:50px;width:200px;background-color:black;color:white;href="#";font-size:15px" 
+onclick=window.location.href="http://www.bing.com" >
+</center>
+</body>
+</head>
+</html>
